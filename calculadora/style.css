@@ -1,0 +1,83 @@
+:root{
+    --targetica: rgb(245, 255, 253);
+}
+
+body{
+    background-color: rgba(100, 180, 233, 0.7);
+}
+
+header{
+    background-color: rgb(100 180 233);
+}
+
+
+
+
+.title{
+    margin: 10px 0;
+}
+
+h1{
+    text-align: center;
+}
+.contenedor_figuras{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 25px;
+}
+
+/*las targetas*/
+.target{
+    width: 30%;
+    height: 75vh;
+    display: grid;
+    justify-content: center;
+    background-color: var(--targetica);
+    border-radius: 5px;
+}
+
+
+.contenedor_imagen{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contenedor_imagen img{
+    width: auto;
+    height: 100%;
+
+}
+.texto__input{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+}
+.Entradas{
+    width: 25%;
+}
+button{
+    width: 100%;
+    height: 20px;
+    margin: 5px;
+    background-color: rgb(49, 52, 68);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(17, 40, 59);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(199, 134, 236);
+}
+.salidas{
+    height: 25px;
+    background-color: var(--targetica);
+    border: none;
+    border-bottom: 2px solid rgb(17, 40, 59);
+    text-align: center;
+}

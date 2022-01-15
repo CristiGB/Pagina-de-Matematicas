@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base_style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor__navegador">
+            <h1 class="iniciales">IG</h1>
+            <h1 class="title">PRECIO CON DESCUENTO</h1>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="https://github.com/CristiGB">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="Principal__Contenedor">
+    <div class="target">
+        <h1 class="titulo__descuento">Precio con descuento</h1>
+        <div class="contenedor_imagen">
+            <img src="porcent.png" alt="">
+        </div>
+        <form >
+            <div class="texto__input">
+                <label for="precioEntrada" class="texto_label">¿Cual es el precio?</label>
+                <input type="number"  id="precioEntrada" class="Entradas precioEntrada" placeholder="$3000">
+            </div>
+            <div class="texto__input">
+                <label for="descuentoEntrada" class="texto_label">¿Cual es tu descuento a aplicar?</label>
+                <input type="number"  id="descuentoEntrada" class="Entradas descuentoEntrada">
+            </div>
+
+            <button id="button__precio__descuento" type="button"  onclick="onClickButtonPrecioDescuento()" >Calcular precio con descuento</button>
+
+        </form>
+            <p id="Texto__resultadoDescuento" class="salidas"></p>
+        </div>
+    </div>
+    <script src="Porcentajes.js"></script>
+    <footer>
+        <p> 🤍 2021 © Create by 
+            <a href="https://www.linkedin.com/in/isabel-gomez-balvin-898984161/">Isabel Gomez</a>  🤍</p>
+    </footer>
+</body>
+</html>

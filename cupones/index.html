@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../base_style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>cupones</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor__navegador">
+            <h1 class="iniciales">IG</h1>
+            <h1 class="title">CUPONES</h1>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="https://github.com/CristiGB">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="Principal__Contenedor">
+    
+        <div class="contendor__productos">
+            <div class="target_producto">
+                <h2>Pastelillos</h2>
+                <div class="div_imagen_contenedor">
+                    <div class="contenedor_imagen_producto">
+                        <img src="cupcake.png" alt="sasa">
+                    </div>
+                </div>
+                <p class="descripcion">Delicioso pastelillo de chocolate con glaseado de merengue</p>
+                <p class="Precio_producto precio_pastelillo">4500</p>
+                <form >
+                    <button id='disminuir' type="button" onclick="onClickdisminuir('pastelillo')" >-</button>
+                    <input type="number" id="cantidad_producto_pastelillo" class="cantidad_agregar cantidad_agregar_pastelillo" value="1">
+                    <button id='aumentar' type="button" onclick="onClickaumentar('pastelillo')" >+</button>
+                    <button class="boton_agregar" type="button" onclick="onClickagregar_produto('pastelillo')" >agregar</button>
+                </form>
+                
+            </div>
+            <div class="target_producto">
+                <h2>Cappuccino</h2>
+                <div class="div_imagen_contenedor">
+                    <div class="contenedor_imagen_producto">
+                        <img src="cappuccino.png" alt="sasa">
+                    </div>
+                </div>
+                <p  class="descripcion">Cappuccino caliente con leche de 350ml</p>
+                <p class="Precio_producto precio_cappuccino">4200</p>
+                <form >
+                    <button id='disminuir' type="button" onclick="onClickdisminuir('capuccino')" >-</button>
+                    <input type="number" id="cantidad_producto_cappuccino" class="cantidad_agregar cantidad_agregar_capuccino" value="1">
+                    <button id='aumentar' type="button" onclick="onClickaumentar('capuccino')" >+</button>
+                    <button class="boton_agregar" type="button" onclick="onClickagregar_produto('capuccino')" >agregar</button>
+                </form>
+                
+            </div>
+            <div class="target_producto">
+                <h2>Cheesecake</h2>
+                <div class="div_imagen_contenedor">
+                    <div class="contenedor_imagen_producto">
+                        <img src="cheesecake.png" alt="sasa">
+                    </div>
+                </div>
+                <p class="descripcion">Tarta Cheesecake con salsa de frutos rojos </p>
+                <p class="Precio_producto precio_cappuccino">6800</p>
+                <form >
+                    <button id='disminuir' type="button" onclick="onClickdisminuir('Tarta')" >-</button>
+                    <input type="number" id="cantidad_producto_cappuccino" class="cantidad_agregar cantidad_agregar_Tarta" value="1">
+                    <button id='aumentar' type="button" onclick="onClickaumentar('Tarta')" >+</button>
+                    <button class="boton_agregar" type="button" onclick="onClickagregar_produto('Tarta')">agregar</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="targeta_contenedor">
+            <div class="target">
+                <h1 class="titulo__descuento">Resumen de compra</h1>
+                <div class="contenedor_imagen">
+                    <img src="" alt="">
+                </div>
+                <form >
+                    <h4>Productos</h4>
+                    <div class="contenedor_resume_productos">
+                        <!---<div class="texto__input_resumen">  
+                            <p class="nombre__porducto resumen resumen_pastelillo">Pastelillos</p>
+                            <p class="cantidad__producto resumen resumen_cantidad_pastelillo">2</p>
+                        </div>---->
+                    </div>
+                    <div class="texto__input_cupon">
+                        <label for="descuentoEntrada" class="texto_label">Cupon:</label>
+                        <input type="text"  id="cuponEntrada" class="Entradas cuponEntrada">
+                    </div>
+
+                    <button id="button__Aplicar__Cupon" type="button"  onclick="onClickButtonAplicarCupon()" >Aplicar Cupon</button>
+                    <p class="detalles_cupon"></p>
+                    <h5 class="Title_antes"></h5>
+                    <p class="Precio_antes_cupon"></p>
+
+                </form>
+                    <h4 class="title_total">TOTAL:</h4>
+                    <p id="Precio__final" class="Precio_final">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="list-cupones.js"></script>
+    <script src="cupones.js"></script>
+    <footer>
+        <p> 🤍 2021 © Create by 
+            <a href="https://www.linkedin.com/in/isabel-gomez-balvin-898984161/">Isabel Gomez</a>  🤍</p>
+    </footer>
+</body>
+</html>

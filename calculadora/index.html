@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../base_style.css">
+    <title>La calculadora</title>
+    
+</head>
+<body>
+    <header>
+        <div class="contenedor__navegador">
+            <h1 class="iniciales">IR</h1>
+            <h1 class="title">AREA Y PERIMETRO DE FIGURAS GEOMETRICAS</h1>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="https://github.com/CristiGB">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contenedor_figuras">
+        <div class="contenedor__circulo target">
+            <h1 class="titulo_figura">Circulo</h1>
+            <div class="contenedor_imagen">
+                <img src="circulo.png" alt="">
+            </div>
+            <form >
+                <div class="texto__input">
+                    <label for="radio_circulo">Pon el radio:</label>
+                    <input type="number"  id="radio_circulo" class="Entradas">
+                </div>
+                <button id="perimetro_circulo" type="button" onclick="Perimetro_circulo()">Obtener Perimetro</button>
+                <button id="area_circulo" type="button"  onclick="Area_circulo()" >Obtener Area</button>
+
+            </form>
+            <input type="number" class="Salida_circulo salidas">
+        </div>
+        <div class="contenedor__triangulo target">
+            <h1 class="titulo_figura">Triangulo</h1>
+            <div class="contenedor_imagen">
+                <img src="triangulo.png" alt="">
+            </div>
+            <form >
+                <div class="texto__input">
+                    <label for="lado1_triangulo">Primer   lado:</label>
+                    <input type="number"  id="lado1_triangulo" class="Entradas">
+                </div>
+                <div class="texto__input">
+                    <label for="lado2_triangulo">Segundo lado:</label>
+                    <input type="number"  id="lado2_triangulo" class="Entradas">
+                </div>
+                <div class="texto__input">
+                    <label for="lado3_triangulo">Lado Base:</label>
+                    <input type="number"  id="lado3_triangulo" class="Entradas">
+                </div>
+                <button id="perimetro_triangulo" type="button" onclick="Perimetro_triangulo()">Obtener Perimetro</button>
+                <button id="area_triangulo" type="button"  onclick="Area_triangulo()" >Obtener Area</button>
+                
+            </form>
+            <input type="number" class="Salida_triangulo salidas">
+        </div>
+        <div class="contenedor__rectangulo target">
+            <h1 class="titulo_figura">Rectangulo</h1>
+            <div class="contenedor_imagen">
+                <img src="rectangulo.png" alt="">
+            </div>
+            <form >
+                <div class="texto__input">
+                    <label>Primer lado:</label>
+                    <input type="number"  id="lado_rectangulo" class="Entradas">
+                </div>
+                <div class="texto__input">
+                    <label>Segundo lado:</label>
+                    <input type="number"  id="lado2_rectangulo" class="Entradas">
+                </div>
+                <button id="perimetro_rectangulo" type="button" onclick="Perimetro_rectangulo()">Obtener Perimetro</button>
+                <button id="area_rectangulo" type="button"  onclick="Area_rectangulo()">Obtener Area</button>
+                
+            </form>
+            <input type="number" class="Salida_rectangulo salidas">
+        </div>
+        
+    </div>
+    <script src="calculadora.js"></script>
+    <footer>
+        <p> 🤍 2021 © Create by 
+            <a href="https://www.linkedin.com/in/isabel-gomez-balvin-898984161/">Isabel Gomez</a>  🤍</p>
+    </footer>
+</body>
+</html>
