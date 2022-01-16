@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500;700&display=swap');
+
+:root{
+    --oscuro: rgb(14, 4, 34);
+    --morado_claro: rgb(209, 151, 243);
+}
+
+    
+body{
+    margin: 0;
+    background-color: var(--morado_claro);
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.contenedor__navegador{
+    color: var(--oscuro);
+    margin-bottom: 0;
+}
+
+
+.lista_talleres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+} 
+
+.lista_talleres li{
+    list-style: none;
+    height: 25vh;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    
+    border-bottom: 1px solid var(--oscuro);
+}
+
+.lista_talleres li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    margin-top: 0;
+}
