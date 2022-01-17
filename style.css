@@ -12,22 +12,21 @@
     
 body{
     margin: 0;
-    background: linear-gradient(to left, var(--azul), var(--azul_elect));
+    background: rgba(0,0,0);
     font-family: 'Spline Sans', sans-serif;
 }
 
 .contenedor__navegador{
     color: var(--claro);
     margin-bottom: 0;
+    border: none;
 }
 
 .contenedor__navegador li a{
     color: var(--claro);
     font-family: 'Spline Sans', sans-serif;
 }
-.iniciales{
-    color: var(--azul);
-}
+
 .lista_talleres {
     display: flex;
     flex-direction: column;
