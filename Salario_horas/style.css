@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500;700&display=swap');
+
+:root{
+    --naranja: rgb(255, 154, 45);
+    --azul-cielo: rgb(118, 182, 224);
+    --targetica: rgb(255, 255, 255);
+    --morado: #45409c;
+    --sombra: rgb(88, 73, 155);
+    --azul-oscurito: rgb(158, 144, 238);
+    --morado-opaco: rgba(178, 189, 248,0.5);
+    --morado-degradado: linear-gradient(to bottom, var(--azul-oscurito), var(--azul-cielo));
+
+}
+
+body{
+    background: var(--morado-degradado);
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.contenedor__navegador{
+    margin-bottom: 10px;
+    border-bottom: 5px dotted rgba(95, 231, 255, 0.4);
+}
+
+.Principal__Contenedor,.targeta_color, .targeta_contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+
+.targeta_color{
+    width: 70%;
+    height: 85vh;
+    background-color: var(--targetica);
+    border-radius: 10px;
+    box-shadow: 9px 5px 20px 2px var(--sombra);
+    position: relative;
+    overflow: hidden;
+}
+/*mancha en targeta*/
+.mancha1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--morado-opaco);
+    border-radius: 0 0 100% 0;
+    left: 0;
+}
+.mancha2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--morado-opaco);
+    border-radius: 50%;
+}
+
+.mancha3{
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    background-color: var(--morado-opaco);
+    border-radius: 50%;
+    bottom: 0;
+
+    margin-left: 100px;
+    border-radius: 300px 300px 0 0;
+}
+
+
+
+.targeta_contenedor{
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/*arreglos de la targeta interna*/
+.target{
+    width: 50%;
+    margin: 50px;
+    display: grid;
+}
+.texto_aplica{
+    font-weight: lighter;
+    color: rgb(153, 150, 157);
+}
+
+.texto_label{
+    display: block;
+    margin-top: 15px;
+}
+
+.label_salario{
+    margin-top: 20px;
+}
+
+/*inputs y selects*/
+#tipo_horasExtra{
+    height: 30px;
+    border-radius: 8px;
+}
+
+.salarioEntrada{
+    text-align: center;
+    margin-top: 10px;
+    height: 20px;
+    border:none;
+    border-bottom: 1.5px solid rgb(111, 10, 111);
+}
+
+/*botones aumentar y disminuir*/
+#disminuir,#aumentar{
+    background-color: var(--morado);
+    color: var(--targetica);
+    border:none;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Horas_agregar{
+    width: 50px;
+    height: 19px;
+}
+
+.contenedor_bton_calcular{
+    display: block;
+    margin-top: 15px;
+}
+.boton_calcularHoras{
+    background-color: var(--naranja);
+    border:none;
+    color: var(--targetica);
+    font-family: 'Spline Sans';
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+.boton_calcularHoras:active{
+    background-color: var(--morado);
+    color: var(--naranja);
+}
+
+.contenedor_resume_Horas{
+    margin-top: 20px;
+    color: var(--morado);
+}
+
+
+.Salario_con_Horas::before{
+    content: "$";
+}
+
+/*imagena de la targeta*/
+
+
+.contenedor_imagen{
+    width: 50%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contenedor_imagen img{
+    width: 90%;
+    height: 100%;
+}
+
+
+
+
+footer{
+    margin-top: 10px;
+}

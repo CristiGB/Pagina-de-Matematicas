@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Calculo de Horas Extras</title>
+    <link rel="stylesheet" href="../base_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor__navegador">
+            <h1 class="iniciales">IG</h1>
+            <h1 class="title">Salario Con Horas Extras</h1>
+            <ul>
+                <li class="icon-home"><a href="/">Inicio</a></li>
+                <li class="icon-github-alt"><a href="https://github.com/CristiGB">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="Principal__Contenedor">
+
+        <div class="targeta_color">
+            <div class="mancha1"></div>
+            <div class="mancha2"></div>
+            <div class="mancha3"></div>
+
+            <div class="targeta_contenedor">
+                <div class="target">
+                    <p class="texto_aplica">*Aplica para ley Colombiana*</p>
+                    <form >
+                        <div class="texto__input">
+                            <label for="salarioEntrada" class="texto_label label_salario">TU SALARIO:</label>
+                            <input type="number"  id="salarioEntrada" class="Entradas salarioEntrada" placeholder="$1000 000">
+                        </div>
+                        <label for="tipo_horasExtra" class="texto_label">¿Que tipo de horas?:</label>
+                        <select name="select_tipo_horasExtra" id="tipo_horasExtra">
+                            <option value="diurna">DIURNA</option>
+                            <option value="nocturna" selected>NOCTURNA</option>
+                            <option value="festivo_diurna">DOMINICAL Y/O FESTIVO DIURNA</option>
+                            <option value="festivo_nocturna">DOMINICAL Y/O FESTIVO NOCTURNA</option>
+                        </select>
+                        <label for="cantidad_Horas" class="texto_label">¿Cuantas horas?:</label>
+                        <button id='disminuir' type="button" onclick="onClickdisminuir()" >-</button>
+                        <input type="number" id="Horas_agregar" class="Horas_agregar" value="1">
+                        <button id='aumentar' type="button" onclick="onClickaumentar()" >+</button>
+                        <div class="contenedor_bton_calcular">
+                            <button class="boton_calcularHoras" type="button" onclick="onClickCalcaularHoras()">Calcular Horas a pagar</button> 
+                        </div> 
+                    </form>
+
+                    <div class="contenedor_resume_Horas">
+                        <h5 class="Title_conHoras"></h5>
+                        <p class="Salario_con_Horas">0.00</p>
+                    </div>
+
+                    
+                </div>
+                <div class="contenedor_imagen">
+                    <img src="gente2.png" alt="sasa">
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <script src="horas_extra.js"></script>
+    <footer>
+        <p> 🤍 2021 © Create by 
+            <a href="https://www.linkedin.com/in/isabel-gomez-balvin-898984161/">Isabel Gomez</a>  🤍</p>
+    </footer>   
+</body>
+</html>

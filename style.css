@@ -2,22 +2,32 @@
 
 :root{
     --oscuro: rgb(14, 4, 34);
-    --morado_claro: rgb(209, 151, 243);
+    --morado_claro: rgb(204, 175, 238);
+    --claro: rgb(255, 255, 255);
+    --amarilo: rgb(243, 234, 98);
+    --azul:rgb(79, 76, 104);
+    --azul_elect: rgb(92, 244, 255);
 }
 
     
 body{
     margin: 0;
-    background-color: var(--morado_claro);
+    background: linear-gradient(to left, var(--azul), var(--azul_elect));
     font-family: 'Spline Sans', sans-serif;
 }
 
 .contenedor__navegador{
-    color: var(--oscuro);
+    color: var(--claro);
     margin-bottom: 0;
 }
 
-
+.contenedor__navegador li a{
+    color: var(--claro);
+    font-family: 'Spline Sans', sans-serif;
+}
+.iniciales{
+    color: var(--azul);
+}
 .lista_talleres {
     display: flex;
     flex-direction: column;
@@ -26,18 +36,55 @@ body{
 } 
 
 .lista_talleres li{
+    position: relative;
     list-style: none;
-    height: 25vh;
+    background-position: center;
+    height: 30vh;
     display: flex;
     align-items:  center;
     justify-content: center;
-    
+    overflow: hidden;
     border-bottom: 1px solid var(--oscuro);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
 }
+
 
 .lista_talleres li a{
     text-decoration: none;
-    color: white;
+    font-family: 'Spline Sans', sans-serif;
+    position: relative;
+    font-size: 20px;
+    color:var(--claro);
+    
+}
+
+.lista_talleres li:hover{
+    height: 33vh;
+}
+
+/*poniendo las imagenes de fondo en los enlaces*/
+.lista_talleres li::before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.View_1{
+    background-image: url(view_calculadora.png);
+}
+.View_2{
+    background-image: url(view_porcentajes.png);
+}
+.View_3{
+    background-image: url(view_cupones.png);
+}
+.View_4{
+    background-image: url(view_horas.png);
 }
 
 footer{
