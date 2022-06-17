@@ -46,3 +46,4 @@ function onClickCalcaularHoras(){
     resultado.innerText = formatoPeso;
 }
 
+
